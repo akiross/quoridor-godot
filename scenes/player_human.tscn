@@ -1,11 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwmp611i02ykx"]
+[gd_scene load_steps=3 format=3 uid="uid://iujqgbkppetp"]
 
 [ext_resource type="Script" path="res://scripts/player_human.gd" id="1_bp6xc"]
+[ext_resource type="Texture2D" uid="uid://bu7ppb7ob23d4" path="res://assets/circle.svg" id="2_mml4k"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_bp6xc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_right = 100.0
 offset_bottom = 100.0
 color = Color(0.807843, 0, 0, 1)
+
+[node name="Circle" type="Sprite2D" parent="."]
+texture = ExtResource("2_mml4k")
+offset = Vector2(250, 250)
